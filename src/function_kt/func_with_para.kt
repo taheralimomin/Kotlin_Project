@@ -40,7 +40,7 @@ fun maxVal(no1 : Int, no2 : Int, no3 : Int = 25): String {
 // function with named argument
 
 fun nmArgsVal(){
-    
+
 }
 
 
