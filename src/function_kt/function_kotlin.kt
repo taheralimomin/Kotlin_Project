@@ -62,5 +62,3 @@ fun multi(): String {
     return ("Multiplication ${p * q}")
 }
 
-// function with parameter
-

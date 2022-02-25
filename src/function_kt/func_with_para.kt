@@ -6,6 +6,9 @@ fun main(){
    println(mul)
    val max = maxVal(10, 20)
    println(max)
+
+   val totalVal = nmArgVal(t = 30, s = 40)
+   println(totalVal)
 }
 
 // function with parameter
@@ -25,22 +28,23 @@ fun multi(x : Int, y : Int): String {
 
 // function with default argument
 fun maxVal(no1 : Int, no2 : Int, no3 : Int = 25): String {
-    if (no1 > no2) {
-        return ("Maximum number of $no1")
+    return if (no1 > no2) {
+        ("Maximum number of $no1")
     }
     else if (no2 > no3){
-        return ("Maximum number of $no2")
+        ("Maximum number of $no2")
     }
     else{
-        return ("Maximum number of $no3")
+        ("Maximum number of $no3")
     }
 
 }
 
 // function with named argument
-
-fun nmArgsVal(){
-    
+fun nmArgVal(s : Int, t : Int): Int {
+   println("\t First value of S No = $s \n")
+   println("\t Second value of T No = $t")
+  return (s + t)
 }
 
 
