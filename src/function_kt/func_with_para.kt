@@ -1,7 +1,5 @@
 package function_kt
 
-import javax.security.sasl.AuthorizeCallback
-
 fun main(){
    disp(10,20)
    val mul = multi(20, 45)

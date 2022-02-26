@@ -13,11 +13,11 @@ fun main() {
 
 //    type conversion
 
-    val x : Int = 100
+    val x = 100
     val y: Float = x.toFloat()
     println(y)
 
-    val a : Double = 23.658686
+    val a = 23.658686
     val b: Float = a.toFloat()
     println(b)
 
