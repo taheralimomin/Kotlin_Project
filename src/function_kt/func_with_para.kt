@@ -1,5 +1,7 @@
 package function_kt
 
+import javax.security.sasl.AuthorizeCallback
+
 fun main(){
    disp(10,20)
    val mul = multi(20, 45)
@@ -9,6 +11,9 @@ fun main(){
 
    val totalVal = nmArgVal(t = 30, s = 40)
    println(totalVal)
+
+   hiOf(10, 20, :: add)
+   hOFun1(40, 70, ::max1)
 }
 
 // function with parameter
@@ -48,3 +53,25 @@ fun nmArgVal(s : Int, t : Int): Int {
 }
 
 
+// higher order function
+
+fun add(m : Int , n : Int) : String {
+    return ("\t Higher order function in value ${m + n} \n")
+}
+fun hiOf(m : Int, n : Int, callback: (Int , Int) -> String){
+    println(callback(m, n))
+}
+
+fun max1(no3 : Int, no4 : Int): String {
+    return if (no3 > no4){
+        ("Maximum number of $no3")
+    }
+    else {
+        ("Maximum number of $no4")
+    }
+
+}
+fun hOFun1(no3: Int, no4: Int, callback: (Int, Int) -> String){
+    println(callback(no3, no4))
+
+}
