@@ -82,7 +82,7 @@ fun nullFunc3() {
     name1 = "Rajesh Motiwala Surat"
 
 
-    var name: String? = null
+    val name: String?
     name = "JetBrains kotlin"
     println(name)
 
@@ -98,7 +98,7 @@ fun chNFunc1() {
 
 // option : Check null in condition OR Safe call
 
-    var str1: String? = "Kotlin Lang"
+    val str1: String?
     str1 = null
     val strLenChk = str1?.length ?: -1
     println(strLenChk)
