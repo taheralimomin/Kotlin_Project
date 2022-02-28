@@ -91,14 +91,4 @@ fun main() {
     intArrayOf(9,12))
     println(Arrays.deepToString(arr7))
 
-
-
-
-
-
-
-
-
-
-
 }
