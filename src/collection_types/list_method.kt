@@ -100,23 +100,24 @@ fun main(){
 //   sorting in the list
     print("\n")
 
-    val list4 = mutableListOf(2, 6, 9, 33, 26, 4, 67, 44, 1)
-    println(list4)
+    mutableListOf(2, 6, 9, 33, 26, 4, 67, 44, 1).also {
+        println(it)
 
-    list4.sort()
-    println(list4)
+        it.sort()
+        println(it)
 
-   list4.sortDescending()
-   println(list4)
+        it.sortDescending()
+        println(it)
 
 //   list4.sortBy { it.compareTo(20)}
 //    println(list4)
 
-    list4.shuffle()
-    println(list4)
+        it.shuffle()
+        println(it)
 
-   list4.reverse()
-   println(list4)
+        it.reverse()
+        println(it)
+    }
 
 
 //    user input list

@@ -23,6 +23,7 @@ fun listItems(){
         println(item)
     }
 
+
     for (i in items.indices){
         println("$i ---> ${items[i]}")
     }
@@ -47,9 +48,6 @@ fun listItems(){
 
     println(items.size)
     println(items.get(4))
-
-
-
 
 }
 
