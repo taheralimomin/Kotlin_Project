@@ -32,7 +32,7 @@ fun mutableSetTest(){
     print("\n")
 
     val mySetInt3 = mutableSetOf<Int>(2, 6, 4, 29, 15, 34)
-    val mySetInt4 = mutableSetOf<Int>(1, 2, 4, 5, 8,)
+    val mySetInt4 = mutableSetOf<Int>(1, 2, 4, 5, 8)
     val mySetInt5 = mutableSetOf<Int>(2, 4, 6)
 
     println(mySetInt3.contains(29))
@@ -77,6 +77,7 @@ fun mutableSetTest(){
     println(numbers subtract setOf("four", "three"))
 
     print("\n")
+
 
     val list1 = listOf(1, 1, 2 ,3, 5, 8, -1)
     val list2 = listOf(1, 1, 2, 2 ,3, 5)
