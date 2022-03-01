@@ -60,6 +60,30 @@ fun mutableSetTest(){
     println(mySetInt.drop(3))
 
 
+    print("\n")
+
+    val mySetInt6 = hashSetOf<String>("XYZ", "ABC", "PQR")
+    println(mySetInt6)
+
+    print("\n")
+
+    val numbers = setOf("one", "two", "three")
+
+    println(numbers union setOf("four", "five"))
+    println(setOf("four", "five") union numbers)
+
+    println(numbers intersect setOf("two", "one"))
+    println(numbers subtract setOf("three", "four"))
+    println(numbers subtract setOf("four", "three"))
+
+    print("\n")
+
+    val list1 = listOf(1, 1, 2 ,3, 5, 8, -1)
+    val list2 = listOf(1, 1, 2, 2 ,3, 5)
+    println(list1 intersect list2) // result on two lists is a Set
+    println(list1 union list2)     // equal elements are merged into one
+
+
 }
 
 
