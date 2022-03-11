@@ -56,9 +56,7 @@ class Vendor : Employee() {
         println("Vendor Department --- $depart_vend")
 
     }
-
 }
-
 fun main() {
     val cp = CompanyEmp()
     cp.disp()
